@@ -1,0 +1,11 @@
+# Décret n° 02-296 du 5 juillet 2002
+
+Décret portant Déclaration d’une journée de Deuil National
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/decrets/decret-02-296-2002-07-05-pr-pm-02/>
+- Signature : 2002-07-05 ; publication : 2002-07-05 ; entrée en vigueur : 2002-07-05 (selon Légitchad)
+- Date retenue : 2002-07-05 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : périmé
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 3 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
