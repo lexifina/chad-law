@@ -1,0 +1,11 @@
+# Décret n° 95-068 du 4 février 1995
+
+Décret portant statuts de la chambre de commerce, d'industrie, d'agriculture, des mines et d'artisanat
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/decrets/decret-95-068-1995-02-02-pr-met/>
+- Signature : 1995-02-04 ; publication : 1995-02-04 ; entrée en vigueur : 1995-02-04 (selon Légitchad)
+- Date retenue : 1995-02-04 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : en vigueur
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 90 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
