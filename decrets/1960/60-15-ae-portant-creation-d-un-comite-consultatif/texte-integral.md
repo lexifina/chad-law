@@ -1,4 +1,4 @@
-# Décret du 26 janvier 1960 60-15 1960-01-26 AE portant création d'un Comité consultatif territorial des viandes du Tchad
+# Décret n° 60-15 du 26 janvier 1960 AE portant création d'un Comité consultatif territorial des viandes du Tchad
 
 Décret 60-15 1960-01-26 AE portant création d'un Comité consultatif territorial des viandes du Tchad Date : 1960-01-26 Le Premier ministre;
 Sur le rapport du vice-premier ministre chargé de la coordination économique, du plan, du tourisme et des relations extérieures;
