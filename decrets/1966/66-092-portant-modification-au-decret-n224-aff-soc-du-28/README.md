@@ -1,0 +1,11 @@
+# Décret n° 66-092 du 9 mai 1966
+
+Décret portant modification au décret n°224/AFF-SOC du 28 décembre 1962, fixant le tarif des consultations aux bénéficiaires de l'assistance médicale
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/decrets/decret-66-092-1966-05-09-dsp-ad/>
+- Signature : 1966-05-09 ; publication : 1966-05-09 ; entrée en vigueur : 1966-05-09 (selon Légitchad)
+- Date retenue : 1966-05-09 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : périmé
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 5 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
