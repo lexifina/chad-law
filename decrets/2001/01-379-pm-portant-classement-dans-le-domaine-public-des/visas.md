@@ -1,0 +1,6 @@
+# Visas
+
+2/11/2015 Légitchad http://legitchad.cefod-tchad.org/texte/2580 1/1 Décret 01-379 2001-07-19 PR/PM/MTPTHV Décret portant classement dans le domaine public des parcelles situées sur l'emprise des travaux du projet de drainage des eaux pluviales des zones Est de la ville de N'Djaména. Texte en vigueur Vu la Constitution ;
+Vu le Décret n°513/PR/99 du 13 décembre 1999 portant nomination du Premier Ministre, Chef du Gouvernement ; Vu le Décret n°197/PR/PM/2001 du 08 avril 2001 portant remaniement du Gouvernement ; Vu le Décret n°295/PR/PM/SGG/2000 du 19 juillet 2000 portant structure générale du Gouvernement et attributions de ses membres ;
+Vu la Loi n°23 du 22 juillet portant statut des biens domaniaux ;
+Vu le Décret n°188/PR du 1er août 1967 portant application de ladite loi ; Vu la Loi n°24 du 22 juillet 1967 sur le régime de la propriété foncière et des droits coutumiers ; Vu le Décret n°186/PR du 1er août 1967 portant application de ladite loi ; Vu la Loi n°25 du 22 juillet 1967 sur la limitation des droits fonciers ; Vu le décret n°187/PR du 1er août 1967 portant application de ladite loi ; Vu le Décret n°392/MTPTHU/97 du 8 septembre 1997 portant réorganisation du Ministère des travaux publics, des transports, de l'habitat et de l'urbanisme.
