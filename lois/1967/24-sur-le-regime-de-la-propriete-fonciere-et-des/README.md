@@ -1,4 +1,4 @@
-# Loi n°24 du 22 juillet 1967 Titre 1 - Constatation de la propriété foncière Art.1.- La propriété foncière se constate par la pro- cédure de l’immatriculation
+# Loi n°24 du 22 juillet 1967 sur le régime de la propriété foncière et des droits coutumiers
 
 - Source : FAOLEX (FAO Legal Database), record LEX-FAOC038421, <https://faolex.fao.org/en/documents/LEX-FAOC038421/loi-n-24-sur-le-regime-de-la-propriete-fonciere-et-des-droit-tcd-1967>
 - Fichier : <https://faolex.fao.org/docs/pdf/cha38421.pdf>
