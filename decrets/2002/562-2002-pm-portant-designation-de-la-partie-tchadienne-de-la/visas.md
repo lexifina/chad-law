@@ -1,0 +1,9 @@
+# Visas
+
+Décret n° 562/PR/PM/MEE/2002 portant désignation de la Partie Tchadienne de la plaine d’inondation du Logone et les dépressions Toupouri sur la Liste des zones humides d’importance internationale ou Liste Ramsar.
+Le Président de la République, Chef de l’Etat, Président du Conseil des Ministres. Vu la Constitution ;
+Vu le Décret n° 265/PR/2002 du 11 juin 2002 portant nomination du Premier Ministre, Chef du Gouvernement ;
+Vu le Décret 465/PR/PM/2002 du 14 novembre 2002 portant remaniement du Gouvernement ; Vu le Décret n° 331/PR/PM/2002 du 26 juillet 2002 portant structure générale du Gouvernement et attributions de ses membres ;
+Vu le Décret n° 183/PR/PM/MEE/2001 du 30 mars 2001, portant réorganisation et attributions du Ministère de l’Environnement et de l’Eau ;
+Vu la Loi n° 014/PR/98 du 17 août 1998, définissant les principes généraux de la protection de l’environnement ;
+Vu l’Ordonnance n° 020/PR/88 du 2 août 1988, portant adhésion de la République du Tchad à la Convention relative aux zones humides d’importance internationale ou Convention de Ramsar ; Vu la Convention relative aux zones humides d’importance internationale. Sur proposition du Ministre de l’Environnement et de l’Eau DECRETE
