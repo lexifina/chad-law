@@ -1,0 +1,11 @@
+# Ordonnance n° 85-021 du 23 septembre 1985
+
+Ordonnance portant création d'une Chambre Consulaire du Tchad
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/ordonnances/ordonnance-85-021-1985-09-23-pr/>
+- Signature : 1985-09-23 ; publication : 1985-09-23 ; entrée en vigueur : 1985-09-23 (selon Légitchad)
+- Date retenue : 1985-09-23 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : abrogé
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 6 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
