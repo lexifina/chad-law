@@ -1,0 +1,6 @@
+# Visas
+
+2/11/2015 Légitchad http://legitchad.cefod-tchad.org/texte/2108 1/5 Décret 02-422 2002-10-18 PR/MATUH/02 Décret portant organigramme du Ministère de l’Aménagement du Territoire, de l’Urbanisme et de l’Habitat.
+Texte en vigueur Table des matières TITRE I : DE L’ORGANISATION CHAPITRE I : DE LA DIRECTION DE CABINET CHAPITRE II : DES CONSEILLERS CHAPITRE III : DE L’ADMINISTRATION CENTRALE SECTION 1 : DU SECRETARIAT GENERAL SECTION 2 : DE LA DIRECTION DE L’AMENAGEMENT DU TERRITOIRE SECTION 3 : DE LA DIRECTION DE L’URBANISME, DU CADASTRE ET DE LA CARTOGRAPHIE SECTION 4 : DE LA DIRECTION DE L’HABITAT ET DE L’ARCHITECTURE SECTION 5 : DE LA DIRECTION DES BATIMENTS ET DE LA CONSTRUCTION SECTION 6 : DE LA DIRECTION DES AFFAIRES ADMINISTRATIVES, FINANCIERES ET DU MATERIEL CHAPITRE IV : DES SERVICES EXTERIEURS TITRE II : DES DISPOSITIONS DIVERSES ET FINALES Vu la Constitution ;
+Vu le Décret n° 265/PR/02 du 11 juin 2002 portant nomination du Premier Ministre, Chef du Gouvernement ; Vu le Décret n° 276/PR/PM/02 du 12 juin 2002 portant remaniement du Gouvernement ; Vu le Décret n° 331/PR/PM/02 du 26 juillet 2002 portant structure générale du Gouvernement et attributions de ses membres ;
+TITRE I : DE L’ORGANISATION
