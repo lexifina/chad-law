@@ -1,0 +1,11 @@
+# Visas
+
+Décret n°236/PR/MATUH du 31 mai 2004 portant création, attributions et fonctionnement de la Commission Locale d'Urbanisme Vu la Constitution;
+Vu la loi N°23 du 22 juillet 1967, portant statut des biens domaniaux; Vu la loi N°24 du 22 juillet 1967, sur le régime de la propriété foncière et des droits coutumiers;
+Vu la loi N°25 du 22 juillet 1967, sur la limitation des droits fonciers; Vu le décret N°186/PR du 1er août 1967, portant application de la loi 24 ci-dessus ; Vu le décret N°187/PR du 1er août 1967, portant application de la loi 25 ci-dessus ; Vu le décret N°188/PR du 1er août 1967, portant application de la loi 23 ci-dessus; Vu le décret N°331/PR/PM/SGG/2002 du 26-07-02, portant Structure Générale du Gouvernement et Attributions de ses Membres;
+Vu le décret N°415 du 17 octobre 2002, portant Création et Réorganisation des Départements;
+Vu le décret N°419/PR/MAT/2002 du 17 octobre 2002, portant création des Régions; Vu le décret N°422/PR/MATUH/02 du 18-10-02, portant organisation du Ministère de l'Aménagement du Territoire, de l'Urbanisme et de l'Habitat;
+Vu le décret N°230/PR/2003 du 24 juin 2003, portant nomination du Premier Ministre, Chef du Gouvernement;
+Vu le décret N°019/PR/PM/2004 du 02 février 2004, portant remaniement du Gouvernement;
+Vu le décret N°234Bis/PR/MATUH/04 du 31-05-04, portant création, attributions et fonctionnement de la Commission Nationale d'Urbanisme;
+Décrète :
