@@ -1,0 +1,11 @@
+# Arrêté n° 05-020 du 1er avril 2005
+
+Arrêté portant attributions, organisation et fonctionnement du Service de Passation des Marchés Publics
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/arretes/arrete-05-020-2005-04-01-pr-pm-ma-sgg-daafm/>
+- Signature : 2005-04-01 ; publication : 2005-04-01 ; entrée en vigueur : 2005-04-01 (selon Légitchad)
+- Date retenue : 2005-04-01 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : en vigueur
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 11 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
