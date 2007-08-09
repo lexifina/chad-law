@@ -1,0 +1,11 @@
+# Décret n° 07-593 du 9 août 2007
+
+Décret portant création d’un Haut Comité permanent chargé de l’organisation du pèlerinage dans les lieux saints de l’Islam (Hadj et Oumra)
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/decrets/decret-07-593-2007-08-09-pr-pm-misp-07/>
+- Signature : 2007-08-09 ; publication : 2007-08-09 ; entrée en vigueur : 2007-08-09 (selon Légitchad)
+- Date retenue : 2007-08-09 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : en vigueur
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 13 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
