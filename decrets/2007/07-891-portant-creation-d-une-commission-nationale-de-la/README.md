@@ -1,0 +1,11 @@
+# Décret n° 07-891 du 6 novembre 2007
+
+Décret portant création d'une Commission Nationale de la Francophonie
+
+- Source : Légitchad — Banque tchadienne de données juridiques (BTDJ), CEFOD, <https://legitchad.org/textes/decrets/decret-07-891-2007-11-06-pr-pm-mre/>
+- Signature : 2007-11-06 ; publication : 2007-11-06 ; entrée en vigueur : 2007-11-06 (selon Légitchad)
+- Date retenue : 2007-11-06 (date de signature indiquée par Légitchad (champ « Entrée en vigueur » identique ou absent))
+- Statut selon Légitchad : en vigueur
+- Texte : texte HTML publié par Légitchad (texte officiel seul ; mots-clés et notes de la base non repris)
+- Unités : 10 articles
+- Version : texte tel que publié par la source ; les modifications ultérieures ne sont pas appliquées.
