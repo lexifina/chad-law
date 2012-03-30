@@ -1,0 +1,3 @@
+# Visas
+
+19/2/2015 Légitchad http://legitchad.cefod­tchad.org/texte/3989 1/2 Décret 12­465 2012­03­30 PR/12 Décret Portant création d'une Cellule de Coordination et de mise en Œuvre des Programmes de la Région du Tibesti Texte en vigueur Vu la Constitution ; Vu le Décret n° 874/PR/2011 du 13 août 2011, portant nomination d'un Premier Ministre, Chef du Gouvernement ; Vu le Décret N° 875/PR/PM/2011 du 17 août 2011, portant nomination des Membres du Gouvernement ; Vu le Décret n° 891/PR/PM/2011 du 31 août 2011, portant Structure Générale du Gouvernement et Attribution de ses Membres ; Vu le Décret n° 39/PM/2005 du 28 janvier 2005, portant organisation et attribution de la Direction Générale des Grands Travaux et Projets Présidentiels ;
