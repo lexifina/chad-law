@@ -1,4 +1,5 @@
 # Visas
 
-Loi N°011/PR/1995 du 20 juin 1995 portant Code Minier Vu la Charte de la Transition ;
-Le Conseil Supérieur de la Transition a délibéré et adopté en sa séance du 10 juin 1995.Le Président de la République promulgue la Loi dont la teneur suit : TITRE PREMIER DISPOSITIONS GÉNÉRALES
+REPUBLIQUE DU TCHAD Unité — Travail — Progrés ORDONNANCE N°__°°*__/PR/2018 Portant Code Minier LE PRESIDENT DE LA REPUBLIQUE, CHEF DE L’ETAT, PRESIDENT DU CONSEIL DES MINISTRES, Vu la Constitution ;
+Vu la Loi N° 022/PR/2017 du 30 décembre 2017 portant Habilitation du Gouvernement a légiférer par Ordonnances pendant la période allant du 02 janvier au 04 avril 2018; Le Conseil des Ministres entendu en sa séance du 1° Février 2018 ORDONNE:
+TITRE L: DES DISPOSITIONS GENERALES Chapitre I : Des Définitions
