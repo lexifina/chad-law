@@ -1,0 +1,9 @@
+The legal text comes from the Présidence de la République du Tchad (https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf), retrieved on 29 October 2026. The Présidence states no licence for the legal text. It is an official legal text; its copyright status is not confirmed here, and it is reproduced with the attribution above.
+
+The Code pénal (loi n° 2017-01 du 8 mai 2017, also cited as loi n° 001/PR/2017 portant Code pénal) is copied from the PDF held by FAOLEX (https://faolex.fao.org/docs/pdf/cha213367.pdf), retrieved on 30 October 2026. The PDF carries a droit-afrique.com running head and states no licence.
+
+The Code du travail (loi n° 038/PR/96 du 11 décembre 1996) is copied from the text held in the ILO NATLEX database (https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm), as archived by the Internet Archive on 2 October 2017, retrieved on 30 October 2026. Chad is a member of OAPI, and Article 6(i) of Annex VII of the Bangui Agreement excludes official texts of a legislative nature from copyright protection.
+
+Changes made by Lexifina: the text was converted to one Markdown file per provision, one paragraph per line; spacing, quotes and dashes were normalised; footnotes, running heads and page numbers were removed; and the text was arranged as git commits. The wording of the law was not changed. The Présidence de la République du Tchad does not endorse this repository.
+
+Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are dedicated to the public domain under CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/

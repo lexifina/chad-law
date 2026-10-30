@@ -1,0 +1,47 @@
+{
+ "country": "TD",
+ "acts": [
+  {
+   "slug": "constitution",
+   "short": "Const.",
+   "title": "Constitution de la République du Tchad (2023)",
+   "url": "https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf",
+   "versions": [
+    {
+     "from": "2023-12-29",
+     "units": 313,
+     "source_url": "https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf",
+     "sha256": "fc13a7a18327f7857503a121e801c466011cadf1b383a73bc76e90ae93a35e00"
+    }
+   ]
+  },
+  {
+   "slug": "code-penal",
+   "short": "Code pénal",
+   "title": "Code pénal (loi n° 2017-01 du 8 mai 2017, dite loi n° 001/PR/2017 portant Code pénal)",
+   "url": "https://faolex.fao.org/docs/pdf/cha213367.pdf",
+   "versions": [
+    {
+     "from": "2017-05-08",
+     "units": 519,
+     "source_url": "https://faolex.fao.org/docs/pdf/cha213367.pdf",
+     "sha256": "35df42ca4ea80e78fbf32360c5df46fc870f3de131b67cfaf1ba5a3a17a3bb4e"
+    }
+   ]
+  },
+  {
+   "slug": "code-du-travail",
+   "short": "Code du travail",
+   "title": "Code du travail (loi n° 038/PR/96 du 11 décembre 1996)",
+   "url": "https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm",
+   "versions": [
+    {
+     "from": "1996-12-11",
+     "units": 509,
+     "source_url": "https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm",
+     "sha256": "1ada1a9091f3021254449c309caa1858df7b94070e1cb9ee4dde0a78a17e042f"
+    }
+   ]
+  }
+ ]
+}
