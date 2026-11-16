@@ -59,6 +59,7 @@ The Constitution is credited to itself (`Constitution du 29 décembre 2023`). Th
 - `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before, and compares it with the corpus the repository was built from: 3 versions, no mismatch.
 - A second build from the same corpus into an empty folder gave the same hashes for all 3 law commits and 4 tags.
 - No merge commits, no commit date that goes backwards or lies after the build, and every commit's trailers parse; new versions are appended, never rewritten (`tools/append.py`). Results are in [`REPRODUCE.md`](REPRODUCE.md).
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -80,6 +81,10 @@ The Constitution is credited to itself (`Constitution du 29 décembre 2023`). Th
 See [`LICENSE`](LICENSE). The texts are reproduced with attribution to their sources; Chad is a member of OAPI, and the Bangui Agreement (Annex VII, art. 6(i)) excludes official texts of a legislative nature from copyright protection. Lexifina's own contributions (the history, the commit messages, the tables and the tools) are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text, and none runs when the history is built; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/README.en.md): charts drawn from this repository. Not drawn yet.
 
 ## More
 

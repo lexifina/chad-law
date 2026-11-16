@@ -59,6 +59,7 @@ La Constitution est attribuée à elle-même (`Constitution du 29 décembre 2023
 - `tools/check_repo.py` relit chaque version depuis git au jour de son entrée en vigueur et la veille, et la compare au corpus à partir duquel le dépôt a été construit : 3 versions, aucune divergence.
 - Une seconde construction à partir du même corpus dans un dossier vide a donné les mêmes empreintes pour les 3 commits de textes et les 4 tags.
 - Aucun commit de fusion, aucune date de commit qui recule ou qui soit postérieure à la construction, et les trailers de chaque commit se lisent sans erreur ; les nouvelles versions sont ajoutées, jamais réécrites (`tools/append.py`). Les résultats figurent dans [`REPRODUCE.md`](REPRODUCE.md).
+- [vulnerabilities/](vulnerabilities/): erreurs de rédaction possibles dans ce droit, trouvées par les détecteurs de global-law et vérifiées à la main. Pas encore lancé.
 
 ## Ce qu’il ne montre pas
 
@@ -82,6 +83,10 @@ Voir [`LICENSE`](LICENSE). Les textes sont reproduits avec mention de leurs sour
 Aucun modèle d’IA n’a écrit, traduit ou corrigé de texte juridique, et aucun n’est exécuté lors de la construction de l’historique ; les scripts ont été écrits par un modèle d’IA (voir [`REPRODUCE.md`](REPRODUCE.md)).
 
 Ceci est une traduction de la version anglaise ([README.en.md](README.en.md)) ; en cas de divergence, la version anglaise fait foi.
+
+## Visualisations
+
+- [visualisations/](visualisations/): graphiques tirés de ce dépôt. Pas encore dessinés.
 
 ## En savoir plus
 
