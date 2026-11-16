@@ -1,35 +1,41 @@
-# Chad: law history in git
+# Tchad : l’historique du droit dans git
 
+**Français** · [English](README.en.md)
 
-The law of Chad as a git history: one file per provision, one commit per version on the day it took effect, and the act that made each change as the commit's author. `git blame` names the act behind every article; `git log` lists every change to an article; picking a date gives the text in force that day.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/fr/effort-dark.svg">
+<img alt="Le droit tchadien dans ce dépôt : ce qu’il contient, les modifications par année d’entrée en vigueur, l’exhaustivité au regard des sources officielles et l’exactitude de son contenu" src="data/fr/effort-light.svg" width="880">
+</picture>
 
-Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Chad's national law, which global-law reads at `chad/national/acts/`.
+Le droit tchadien sous forme d’historique git : un fichier par disposition, un commit par version au jour de son entrée en vigueur, et pour auteur de chaque commit le texte qui a apporté la modification. `git blame` désigne le texte à l’origine de chaque article ; `git log` énumère toutes les modifications d’un article ; le choix d’une date donne le texte en vigueur ce jour-là.
 
-**What is in it now:** three acts, each in one version: the Constitution of 2023 (290 articles, with its preamble and 22 titles), the Code du travail of 1996 (509 articles) and the Code pénal of 2017 (519 articles). [`REPRODUCE.md`](REPRODUCE.md) lists them with every decision made by hand; each act's folder has a README listing its provisions.
+Fait partie de [lexifina/global-law](https://github.com/lexifina/global-law), un historique git unique pour le droit de chaque pays : ce dépôt contient le droit national tchadien, que global-law lit dans `chad/national/acts/`.
 
-Each act is a folder with one file per article, `<act>/art-<number>.md` (`code-du-travail/art-212.md` is Article 212, on paid leave, of the Code du travail, loi n° 038/PR/96 du 11 décembre 1996); the Constitution also has `constitution/preambule.md` and one file per title.
+**Contenu actuel :** trois textes, en une version chacun : la Constitution de 2023 (290 articles, avec son préambule et 22 titres), le Code du travail de 1996 (509 articles) et le Code pénal de 2017 (519 articles). [`REPRODUCE.md`](REPRODUCE.md) les énumère avec chaque décision prise manuellement ; le dossier de chaque texte contient un README qui en énumère les dispositions.
 
-The text is in French, one of Chad's two official languages (Constitution, art. 10), as the sources print it. The Arabic text and an English translation are not part of this record.
+Chaque texte est un dossier comportant un fichier par article, `<act>/art-<number>.md` (`code-du-travail/art-212.md` est l’article 212, relatif aux congés payés, du Code du travail, loi n° 038/PR/96 du 11 décembre 1996) ; la Constitution comporte en outre `constitution/preambule.md` et un fichier par titre.
 
-## Questions as git commands
+Le texte est en français, l’une des deux langues officielles du Tchad (Constitution, art. 10), tel que l’impriment les sources. Le texte arabe et une traduction anglaise ne font pas partie de ce registre.
 
-| Question | Command |
+## Questions sous forme de commandes git
+
+| Question | Commande |
 | --- | --- |
-| Every change to Article 212 of the Labour Code | `git log -p --word-diff -- code-du-travail/art-212.md` |
-| Which act wrote each line of Article 212? | `git blame code-du-travail/art-212.md` |
-| Every version of the Labour Code, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 'code-du-travail/art-*.md'` |
-| Article 212 as in force on 1 January 2000 | `python tools/on.py 2000-01-01 code-du-travail art-212` |
+| Toutes les modifications de l’article 212 du Code du travail | `git log -p --word-diff -- code-du-travail/art-212.md` |
+| Quel texte a écrit chaque ligne de l’article 212 ? | `git blame code-du-travail/art-212.md` |
+| Toutes les versions du Code du travail, avec le jour d’entrée en vigueur de chacune | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 'code-du-travail/art-*.md'` |
+| L’article 212 tel qu’en vigueur le 1er janvier 2000 | `python tools/on.py 2000-01-01 code-du-travail art-212` |
 
-**Outside git**, we also host this record publicly, for free:
+**En dehors de git**, nous hébergeons aussi ce registre publiquement, gratuitement :
 
-- **[Ask Claude about Chadian law](https://global-law.lexifina.com/v1/try_claude?country=chad)**: opens Claude with a first question ready.
-- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=chad)**: the same question in ChatGPT.
-- **[Search Chadian law on our site](https://lexifina.com/law?country=chad&q=cong%C3%A9+pay%C3%A9)**: a search for "congé payé", with each provision's text and its versions, no account needed.
-- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=cong%C3%A9+pay%C3%A9&jurisdiction=chad)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
+- **[Interroger Claude sur le droit tchadien](https://global-law.lexifina.com/v1/try_claude?country=chad)** : ouvre Claude avec une première question prête.
+- **[Interroger ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=chad)** : la même question dans ChatGPT.
+- **[Rechercher dans le droit tchadien sur notre site](https://lexifina.com/law?country=chad&q=cong%C3%A9+pay%C3%A9)** : une recherche de « congé payé », avec le texte de chaque disposition et ses versions, sans compte.
+- **[API REST pour les développeurs](https://global-law.lexifina.com/v1/search_law?query=cong%C3%A9+pay%C3%A9&jurisdiction=chad)** : la même recherche en JSON, sans clé. Voir la [documentation ici](https://lexifina.com/api/global-law).
 
-Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in French or in English.
+Les deux assistants lisent le registre au moyen du connecteur gratuit Global law (MCP, `https://global-law.lexifina.com/mcp`) ; la première fois, la conversation vous donne le lien qui l’ajoute. Posez vos questions en français ou en anglais.
 
-**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+**L’héberger vous-même, simplement.** Il suffit de git et de Python, et les outils s’exécutent sur votre machine :
 
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
@@ -37,51 +43,53 @@ python3 tools/countries.py add chad/national/acts
 python3 tools/law.py show 2026-01-01 chad/national/acts/code-du-travail/art-212.md
 ```
 
-Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+Ouvert dans Claude Code, Cursor, VS Code ou Codex, le clone lance aussi un serveur MCP local doté des mêmes outils ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
 
 ## Dates
 
-Each commit is dated at noon, Africa/Ndjamena, on the day the version took effect, and carries it in its `In-force:` trailer:
+Chaque commit est daté à midi, heure de N’Djamena (Africa/Ndjamena), du jour où la version est entrée en vigueur, et porte ce jour dans son trailer `In-force:` :
 
-- the Constitution: 29 December 2023, the day it was promulgated, as its art. 283 makes it take effect on promulgation (it was approved by referendum on 17 December 2023);
-- the two codes: the date of the law that enacted them (11 December 1996 and 8 May 2017), since each code's last article only orders its publication in the Journal officiel.
+- la Constitution : le 29 décembre 2023, jour de sa promulgation, son article 283 la faisant entrer en vigueur dès sa promulgation (elle a été approuvée par référendum le 17 décembre 2023) ;
+- les deux codes : la date de la loi qui les a adoptés (le 11 décembre 1996 et le 8 mai 2017), le dernier article de chaque code se bornant à en ordonner la publication au Journal officiel.
 
-The Constitution is credited to itself (`Constitution du 29 décembre 2023`). The two codes are each the "oldest version available", credited to the publisher (`Présidence de la République du Tchad (presidence.td)`), and their commit messages say so. The committer is always Lexifina.
+La Constitution est attribuée à elle-même (`Constitution du 29 décembre 2023`). Les deux codes constituent chacun la « plus ancienne version disponible », attribuée à l’éditeur (`Présidence de la République du Tchad (presidence.td)`), ce que précisent leurs messages de commit. Le committer est toujours Lexifina.
 
-## How it is checked
+## Comment il est vérifié
 
-- `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before, and compares it with the corpus the repository was built from: 3 versions, no mismatch.
-- A second build from the same corpus into an empty folder gave the same hashes for all 3 law commits and 4 tags.
-- No merge commits, no commit date that goes backwards or lies after the build, and every commit's trailers parse; new versions are appended, never rewritten (`tools/append.py`). Results are in [`REPRODUCE.md`](REPRODUCE.md).
+- `tools/check_repo.py` relit chaque version depuis git au jour de son entrée en vigueur et la veille, et la compare au corpus à partir duquel le dépôt a été construit : 3 versions, aucune divergence.
+- Une seconde construction à partir du même corpus dans un dossier vide a donné les mêmes empreintes pour les 3 commits de textes et les 4 tags.
+- Aucun commit de fusion, aucune date de commit qui recule ou qui soit postérieure à la construction, et les trailers de chaque commit se lisent sans erreur ; les nouvelles versions sont ajoutées, jamais réécrites (`tools/append.py`). Les résultats figurent dans [`REPRODUCE.md`](REPRODUCE.md).
 
-## What it does not show
+## Ce qu’il ne montre pas
 
-- **Amendments.** The two codes are held as enacted, with no later amendments applied. The Constitution is held as promulgated, without the technical revision of 2025 (loi constitutionnelle du 3 octobre 2025, promulgated on 8 October 2025), whose text was not found: the Constitution in force may differ from this record.
-- **Every other law of Chad.** Only these three acts are here.
-- **The Arabic text** of any act.
-- **Headings of the codes** (Livre, Titre, Chapitre, Section) are left out; the Code pénal's source has no articles 64, 148, 294 and 359.
+- **Les modifications.** Les deux codes figurent tels qu’adoptés, sans application d’aucune modification ultérieure. La Constitution figure telle que promulguée, sans la révision technique de 2025 (loi constitutionnelle du 3 octobre 2025, promulguée le 8 octobre 2025), dont le texte n’a pas été trouvé : la Constitution en vigueur peut différer de ce registre.
+- **Toutes les autres lois du Tchad.** Seuls ces trois textes figurent ici.
+- **Le texte arabe** des textes.
+- **Les intitulés des codes** (Livre, Titre, Chapitre, Section) sont omis ; la source du Code pénal ne comporte pas d’articles 64, 148, 294 et 359.
 
 ## Sources
 
-| Source | Kind | Past versions | Notes |
+| Source | Nature | Versions antérieures | Remarques |
 | --- | --- | --- | --- |
-| [Présidence de la République du Tchad](https://presidence.td) | Official publisher: the Constitution | no | The 2023 text as promulgated, from the Présidence's [PDF of June 2024](https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf) |
-| FAOLEX (FAO) | Database of national law: the Code pénal | no | The Code as enacted in 2017, from a droit-afrique.com [PDF](https://faolex.fao.org/docs/pdf/cha213367.pdf) |
-| NATLEX (ILO) | Database of national labour law: the Code du travail | no | The 1996 text, read from an [Internet Archive copy](https://web.archive.org/web/20171002/https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm) of 2 October 2017 |
+| [Présidence de la République du Tchad](https://presidence.td) | Éditeur officiel : la Constitution | non | Le texte de 2023 tel que promulgué, d’après le [PDF de juin 2024](https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf) de la Présidence |
+| FAOLEX (FAO) | Base de données du droit national : le Code pénal | non | Le Code tel qu’adopté en 2017, d’après un [PDF](https://faolex.fao.org/docs/pdf/cha213367.pdf) de droit-afrique.com |
+| NATLEX (OIT) | Base de données du droit national du travail : le Code du travail | non | Le texte de 1996, lu dans une [copie de l’Internet Archive](https://web.archive.org/web/20171002/https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm) du 2 octobre 2017 |
 
 ## Licence
 
-See [`LICENSE`](LICENSE). The texts are reproduced with attribution to their sources; Chad is a member of OAPI, and the Bangui Agreement (Annex VII, art. 6(i)) excludes official texts of a legislative nature from copyright protection. Lexifina's own contributions (the history, the commit messages, the tables and the tools) are CC0 1.0.
+Voir [`LICENSE`](LICENSE). Les textes sont reproduits avec mention de leurs sources ; le Tchad est membre de l’OAPI, et l’Accord de Bangui (annexe VII, art. 6.i)) exclut de la protection par le droit d’auteur les textes officiels de nature législative. Les contributions propres de Lexifina (l’historique, les messages de commit, les tableaux et les outils) sont sous CC0 1.0.
 
-No AI model wrote, translated or corrected legal text, and none runs when the history is built; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+Aucun modèle d’IA n’a écrit, traduit ou corrigé de texte juridique, et aucun n’est exécuté lors de la construction de l’historique ; les scripts ont été écrits par un modèle d’IA (voir [`REPRODUCE.md`](REPRODUCE.md)).
 
-## More
+Ceci est une traduction de la version anglaise ([README.en.md](README.en.md)) ; en cas de divergence, la version anglaise fait foi.
 
-From [lexifina/global-law](https://github.com/lexifina/global-law):
+## En savoir plus
 
-- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
-- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
-- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
-- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
-- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
-- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
+Dans le dépôt [lexifina/global-law](https://github.com/lexifina/global-law) (pages en anglais) :
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): toutes les fonctionnalités et ce que chaque corpus doit prendre en charge (`git blame`, `law.py`, outils MCP)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions et réponses · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposer une modification · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): serveur MCP · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): comment il a été construit · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): à quel point chaque corpus est à jour · [Surveillance](https://github.com/lexifina/global-law/tree/main/monitoring): si les mises à jour fonctionnent · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): comment chaque source officielle est surveillée pour repérer les modifications
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): la rapidité des outils, mesurée
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): graphiques et liens à travers le droit du monde entier
+- [Vulnérabilités](https://github.com/lexifina/global-law/tree/main/vulnerabilities): erreurs dans les textes tels qu’ils ont été publiés
