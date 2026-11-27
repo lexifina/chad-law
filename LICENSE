@@ -6,4 +6,21 @@ The Code du travail (loi n° 038/PR/96 du 11 décembre 1996) is copied from the 
 
 Changes made by Lexifina: the text was converted to one Markdown file per provision, one paragraph per line; spacing, quotes and dashes were normalised; footnotes, running heads and page numbers were removed; and the text was arranged as git commits. The wording of the law was not changed. The Présidence de la République du Tchad does not endorse this repository.
 
+Further texts (added 2026-11-27 onwards; each act's README.md and commit trailers name its source):
+
+  FAOLEX, the FAO legal database (faolex.fao.org): copies of Chadian legislation. FAO terms: reuse for
+  non-commercial purposes with acknowledgement of FAO as the source (https://www.fao.org/contact-us/terms/en/).
+  Source: FAOLEX, Food and Agriculture Organization of the United Nations.
+
+  WIPO Lex (wipo.int/wipolex): copies of Chadian laws, World Intellectual Property Organization; terms of use
+  https://www.wipo.int/tools/en/disclaim.html.
+
+  Présidence de la République du Tchad (presidence.td): official PDFs; no licence stated.
+
+  Code de procédure pénale (loi n° 012/PR/2017): the Ministère de la Justice 2018 edition as held by the Criminal
+  Justice in Africa Database, University of Nottingham (https://cjad.nottingham.ac.uk/en/legislation/648/).
+
+  Under the Bangui Agreement (OAPI), Annex VII, article 6, official texts of a legislative, administrative or
+  judicial nature are not protected by copyright.
+
 Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are dedicated to the public domain under CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/

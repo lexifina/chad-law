@@ -11,9 +11,9 @@ Le droit tchadien sous forme d’historique git : un fichier par disposition, un
 
 Fait partie de [lexifina/global-law](https://github.com/lexifina/global-law), un historique git unique pour le droit de chaque pays : ce dépôt contient le droit national tchadien, que global-law lit dans `chad/national/acts/`.
 
-**Contenu actuel :** trois textes, en une version chacun : la Constitution de 2023 (290 articles, avec son préambule et 22 titres), le Code du travail de 1996 (509 articles) et le Code pénal de 2017 (519 articles). [`REPRODUCE.md`](REPRODUCE.md) les énumère avec chaque décision prise manuellement ; le dossier de chaque texte contient un README qui en énumère les dispositions.
+**Contenu actuel :** 93 textes, chacun dans la version que publie sa source : la Constitution de 2023 ; 7 codes ([code-d-hygiene](codes/code-d-hygiene/), [code-de-l-artisanat](codes/code-de-l-artisanat/), [code-de-l-eau](codes/code-de-l-eau/), [code-de-procedure-penale](codes/code-de-procedure-penale/), [code-du-travail](codes/code-du-travail/), [code-minier](codes/code-minier/), [code-penal](codes/code-penal/)) ; 17 lois, 1 ordonnances, 41 décrets et 26 arrêtés, rangés par nature et par année ([STRUCTURE.md](STRUCTURE.md), liste complète dans [`corpus.json`](corpus.json)). [`REPRODUCE.md`](REPRODUCE.md) énumère les décisions prises manuellement ; le dossier de chaque texte contient un README qui donne sa source et sa date. Les décisions de justice (OHADA) sont dans un dépôt séparé.
 
-Chaque texte est un dossier comportant un fichier par article, `<act>/art-<number>.md` (`code-du-travail/art-212.md` est l’article 212, relatif aux congés payés, du Code du travail, loi n° 038/PR/96 du 11 décembre 1996) ; la Constitution comporte en outre `constitution/preambule.md` et un fichier par titre.
+Chaque texte est un dossier comportant un fichier par article : les codes dans `codes/<code>/`, les autres textes par nature et par année (`lois/1999/…`, `decrets/2010/…`) ; ainsi `codes/code-du-travail/art-212.md` est l’article 212, relatif aux congés payés, du Code du travail, loi n° 038/PR/96 du 11 décembre 1996) ; la Constitution comporte en outre `constitution/preambule.md` et un fichier par titre.
 
 Le texte est en français, l’une des deux langues officielles du Tchad (Constitution, art. 10), tel que l’impriment les sources. Le texte arabe et une traduction anglaise ne font pas partie de ce registre.
 
@@ -21,10 +21,10 @@ Le texte est en français, l’une des deux langues officielles du Tchad (Consti
 
 | Question | Commande |
 | --- | --- |
-| Toutes les modifications de l’article 212 du Code du travail | `git log -p --word-diff -- code-du-travail/art-212.md` |
-| Quel texte a écrit chaque ligne de l’article 212 ? | `git blame code-du-travail/art-212.md` |
-| Toutes les versions du Code du travail, avec le jour d’entrée en vigueur de chacune | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 'code-du-travail/art-*.md'` |
-| L’article 212 tel qu’en vigueur le 1er janvier 2000 | `python tools/on.py 2000-01-01 code-du-travail art-212` |
+| Toutes les modifications de l’article 212 du Code du travail | `git log -p --word-diff -- codes/code-du-travail/art-212.md` |
+| Quel texte a écrit chaque ligne de l’article 212 ? | `git blame codes/code-du-travail/art-212.md` |
+| Toutes les versions du Code du travail, avec le jour d’entrée en vigueur de chacune | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 'codes/code-du-travail/art-*.md'` |
+| L’article 212 tel qu’en vigueur le 1er janvier 2000 | `python tools/on.py 2000-01-01 codes/code-du-travail art-212` |
 
 **En dehors de git**, nous hébergeons aussi ce registre publiquement, gratuitement :
 
@@ -40,7 +40,7 @@ Les deux assistants lisent le registre au moyen du connecteur gratuit Global law
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
 python3 tools/countries.py add chad/national/acts
-python3 tools/law.py show 2026-01-01 chad/national/acts/code-du-travail/art-212.md
+python3 tools/law.py show 2026-01-01 chad/national/acts/codes/code-du-travail/art-212.md
 ```
 
 Ouvert dans Claude Code, Cursor, VS Code ou Codex, le clone lance aussi un serveur MCP local doté des mêmes outils ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
@@ -50,7 +50,10 @@ Ouvert dans Claude Code, Cursor, VS Code ou Codex, le clone lance aussi un serve
 Chaque commit est daté à midi, heure de N’Djamena (Africa/Ndjamena), du jour où la version est entrée en vigueur, et porte ce jour dans son trailer `In-force:` :
 
 - la Constitution : le 29 décembre 2023, jour de sa promulgation, son article 283 la faisant entrer en vigueur dès sa promulgation (elle a été approuvée par référendum le 17 décembre 2023) ;
-- les deux codes : la date de la loi qui les a adoptés (le 11 décembre 1996 et le 8 mai 2017), le dernier article de chaque code se bornant à en ordonner la publication au Journal officiel.
+- les deux codes : la date de la loi qui les a adoptés (le 11 décembre 1996 et le 8 mai 2017), le dernier article de chaque code se bornant à en ordonner la publication au Journal officiel ;
+- les autres textes : la date du texte (promulgation ou signature) que donne son intitulé, ou à défaut la date du texte qu’indique la fiche FAOLEX (trailer `In-force-basis`) ; le jour de publication au Journal officiel n’est pas donné par ces sources ; avant 1970, le commit est daté du 1er janvier 1970 et le vrai jour figure dans l’objet et dans `In-force`.
+
+Les autres textes sont attribués à eux-mêmes (par exemple `Loi n° 016/PR/99 du 18 août 1999`).
 
 La Constitution est attribuée à elle-même (`Constitution du 29 décembre 2023`). Les deux codes constituent chacun la « plus ancienne version disponible », attribuée à l’éditeur (`Présidence de la République du Tchad (presidence.td)`), ce que précisent leurs messages de commit. Le committer est toujours Lexifina.
 
@@ -64,7 +67,8 @@ La Constitution est attribuée à elle-même (`Constitution du 29 décembre 2023
 ## Ce qu’il ne montre pas
 
 - **Les modifications.** Les deux codes figurent tels qu’adoptés, sans application d’aucune modification ultérieure. La Constitution figure telle que promulguée, sans la révision technique de 2025 (loi constitutionnelle du 3 octobre 2025, promulguée le 8 octobre 2025), dont le texte n’a pas été trouvé : la Constitution en vigueur peut différer de ce registre.
-- **Toutes les autres lois du Tchad.** Seuls ces trois textes figurent ici.
+- **Les modifications des autres textes** : chaque texte est donné dans la version publiée par sa source ; les lois modificatives sont des textes distincts et ne sont pas appliquées au texte modifié.
+- **Une grande partie du droit tchadien.** Le Journal officiel (journalofficiel.td) est protégé par un contrôle Cloudflare, et le site du Secrétariat général du gouvernement (sgg-tchad.org) n’existe plus ; les textes viennent donc surtout de copies secondaires (FAOLEX, WIPO Lex). Les textes publiés seulement en numérisation (136 à ce jour) sont écartés : aucune OCR n’est faite ici ; une couche texte fournie par l’éditeur est reprise (4 textes, trailer `Text-source: publisher OCR`, non relue). Manquent aussi le Code civil (version de 1958 applicable au Tchad, sans date sûre) et les constitutions antérieures (1996, 2018).
 - **Le texte arabe** des textes.
 - **Les intitulés des codes** (Livre, Titre, Chapitre, Section) sont omis ; la source du Code pénal ne comporte pas d’articles 64, 148, 294 et 359.
 
@@ -74,6 +78,10 @@ La Constitution est attribuée à elle-même (`Constitution du 29 décembre 2023
 | --- | --- | --- | --- |
 | [Présidence de la République du Tchad](https://presidence.td) | Éditeur officiel : la Constitution | non | Le texte de 2023 tel que promulgué, d’après le [PDF de juin 2024](https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf) de la Présidence |
 | FAOLEX (FAO) | Base de données du droit national : le Code pénal | non | Le Code tel qu’adopté en 2017, d’après un [PDF](https://faolex.fao.org/docs/pdf/cha213367.pdf) de droit-afrique.com |
+| [FAOLEX](https://www.fao.org/faolex/) (FAO) | Copies PDF des textes publiés, avec leur couche texte : les autres codes, lois, ordonnances, décrets et arrêtés | non | Copie secondaire (trailer `Source-status`) ; réutilisation non commerciale avec mention de la FAO |
+| [WIPO Lex](https://www.wipo.int/wipolex/) (OMPI) | Copies PDF de quelques lois | non | Copie secondaire (trailer `Source-status`) |
+| [Présidence de la République](https://presidence.td) (médiathèque) | PDF officiels de décrets et de lois | non | Presque tous numérisés sans couche texte : écartés |
+| [CJAD](https://cjad.nottingham.ac.uk/en/legislation/648/) (Université de Nottingham) | Copie de l’édition 2018 du Ministère de la Justice : le Code de procédure pénale de 2017 | non | Copie secondaire (trailer `Source-status`), PDF natif ; en vigueur le 1er octobre 2017 (art. 691) |
 | NATLEX (OIT) | Base de données du droit national du travail : le Code du travail | non | Le texte de 1996, lu dans une [copie de l’Internet Archive](https://web.archive.org/web/20171002/https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm) du 2 octobre 2017 |
 
 ## Licence

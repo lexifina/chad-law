@@ -11,9 +11,9 @@ The law of Chad as a git history: one file per provision, one commit per version
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Chad's national law, which global-law reads at `chad/national/acts/`.
 
-**What is in it now:** three acts, each in one version: the Constitution of 2023 (290 articles, with its preamble and 22 titles), the Code du travail of 1996 (509 articles) and the Code pénal of 2017 (519 articles). [`REPRODUCE.md`](REPRODUCE.md) lists them with every decision made by hand; each act's folder has a README listing its provisions.
+**What is in it now:** 93 texts, each as its source publishes it: the Constitution of 2023; 7 codes ([code-d-hygiene](codes/code-d-hygiene/), [code-de-l-artisanat](codes/code-de-l-artisanat/), [code-de-l-eau](codes/code-de-l-eau/), [code-de-procedure-penale](codes/code-de-procedure-penale/), [code-du-travail](codes/code-du-travail/), [code-minier](codes/code-minier/), [code-penal](codes/code-penal/)); 17 laws, 1 ordinances, 41 decrees and 26 orders (arrêtés), filed by kind and year ([STRUCTURE.md](STRUCTURE.md); the full list is [`corpus.json`](corpus.json)). [`REPRODUCE.md`](REPRODUCE.md) lists every decision made by hand; each act's folder has a README giving its source and date. Court decisions (OHADA) are in a separate repository.
 
-Each act is a folder with one file per article, `<act>/art-<number>.md` (`code-du-travail/art-212.md` is Article 212, on paid leave, of the Code du travail, loi n° 038/PR/96 du 11 décembre 1996); the Constitution also has `constitution/preambule.md` and one file per title.
+Each act is a folder with one file per article: codes in `codes/<code>/`, other texts by kind and year (`lois/1999/…`, `decrets/2010/…`); so `codes/code-du-travail/art-212.md` is Article 212, on paid leave, of the Code du travail, loi n° 038/PR/96 du 11 décembre 1996); the Constitution also has `constitution/preambule.md` and one file per title.
 
 The text is in French, one of Chad's two official languages (Constitution, art. 10), as the sources print it. The Arabic text and an English translation are not part of this record.
 
@@ -21,10 +21,10 @@ The text is in French, one of Chad's two official languages (Constitution, art. 
 
 | Question | Command |
 | --- | --- |
-| Every change to Article 212 of the Labour Code | `git log -p --word-diff -- code-du-travail/art-212.md` |
-| Which act wrote each line of Article 212? | `git blame code-du-travail/art-212.md` |
-| Every version of the Labour Code, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 'code-du-travail/art-*.md'` |
-| Article 212 as in force on 1 January 2000 | `python tools/on.py 2000-01-01 code-du-travail art-212` |
+| Every change to Article 212 of the Labour Code | `git log -p --word-diff -- codes/code-du-travail/art-212.md` |
+| Which act wrote each line of Article 212? | `git blame codes/code-du-travail/art-212.md` |
+| Every version of the Labour Code, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 'codes/code-du-travail/art-*.md'` |
+| Article 212 as in force on 1 January 2000 | `python tools/on.py 2000-01-01 codes/code-du-travail art-212` |
 
 **Outside git**, we also host this record publicly, for free:
 
@@ -40,7 +40,7 @@ Both assistants read the record through the free Global law connector (MCP, `htt
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
 python3 tools/countries.py add chad/national/acts
-python3 tools/law.py show 2026-01-01 chad/national/acts/code-du-travail/art-212.md
+python3 tools/law.py show 2026-01-01 chad/national/acts/codes/code-du-travail/art-212.md
 ```
 
 Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
@@ -50,7 +50,10 @@ Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local M
 Each commit is dated at noon, Africa/Ndjamena, on the day the version took effect, and carries it in its `In-force:` trailer:
 
 - the Constitution: 29 December 2023, the day it was promulgated, as its art. 283 makes it take effect on promulgation (it was approved by referendum on 17 December 2023);
-- the two codes: the date of the law that enacted them (11 December 1996 and 8 May 2017), since each code's last article only orders its publication in the Journal officiel.
+- the two codes: the date of the law that enacted them (11 December 1996 and 8 May 2017), since each code's last article only orders its publication in the Journal officiel;
+- the other texts: the date of the text (promulgation or signature) in its title, or failing that the date of the text in its FAOLEX record (`In-force-basis` trailer); these sources do not give the Journal officiel day; before 1970 the commit is dated 1 January 1970 and the real day is in the subject and in `In-force`.
+
+The other texts are credited to themselves (for example `Loi n° 016/PR/99 du 18 août 1999`).
 
 The Constitution is credited to itself (`Constitution du 29 décembre 2023`). The two codes are each the "oldest version available", credited to the publisher (`Présidence de la République du Tchad (presidence.td)`), and their commit messages say so. The committer is always Lexifina.
 
@@ -64,7 +67,8 @@ The Constitution is credited to itself (`Constitution du 29 décembre 2023`). Th
 ## What it does not show
 
 - **Amendments.** The two codes are held as enacted, with no later amendments applied. The Constitution is held as promulgated, without the technical revision of 2025 (loi constitutionnelle du 3 octobre 2025, promulgated on 8 October 2025), whose text was not found: the Constitution in force may differ from this record.
-- **Every other law of Chad.** Only these three acts are here.
+- **Amendments to the other texts**: each text is given as its source publishes it; amending laws are separate texts and are not applied to the text they amend.
+- **Much of Chadian law.** The Journal officiel (journalofficiel.td) is behind a Cloudflare challenge and the Secrétariat général du gouvernement's site (sgg-tchad.org) no longer exists, so the texts come mostly from secondary copies (FAOLEX, WIPO Lex). Texts published only as scans (136 so far) are left out: no OCR is done here; a text layer supplied by the publisher is taken (4 texts, trailer `Text-source: publisher OCR`, not proofread). Also missing: the Code civil (the 1958 French text applied in Chad, with no reliable date) and the earlier constitutions (1996, 2018).
 - **The Arabic text** of any act.
 - **Headings of the codes** (Livre, Titre, Chapitre, Section) are left out; the Code pénal's source has no articles 64, 148, 294 and 359.
 
@@ -74,6 +78,10 @@ The Constitution is credited to itself (`Constitution du 29 décembre 2023`). Th
 | --- | --- | --- | --- |
 | [Présidence de la République du Tchad](https://presidence.td) | Official publisher: the Constitution | no | The 2023 text as promulgated, from the Présidence's [PDF of June 2024](https://presidence.td/wp-content/uploads/2024/06/Constitution.pdf) |
 | FAOLEX (FAO) | Database of national law: the Code pénal | no | The Code as enacted in 2017, from a droit-afrique.com [PDF](https://faolex.fao.org/docs/pdf/cha213367.pdf) |
+| [FAOLEX](https://www.fao.org/faolex/) (FAO) | PDF copies of the published texts, with their text layer: the other codes, laws, ordinances, decrees and orders | no | Secondary copy (`Source-status` trailer); non-commercial reuse with credit to FAO |
+| [WIPO Lex](https://www.wipo.int/wipolex/) (WIPO) | PDF copies of a few laws | no | Secondary copy (`Source-status` trailer) |
+| [Présidence de la République](https://presidence.td) (media library) | Official PDFs of decrees and laws | no | Almost all scans without a text layer: left out |
+| [CJAD](https://cjad.nottingham.ac.uk/en/legislation/648/) (University of Nottingham) | Copy of the Ministry of Justice's 2018 edition: the Code de procédure pénale of 2017 | no | Secondary copy (`Source-status` trailer), born-digital PDF; in force 1 October 2017 (art. 691) |
 | NATLEX (ILO) | Database of national labour law: the Code du travail | no | The 1996 text, read from an [Internet Archive copy](https://web.archive.org/web/20171002/https://www.ilo.org/dyn/natlex/docs/WEBTEXT/47297/65070/F96TCD01.htm) of 2 October 2017 |
 
 ## Licence

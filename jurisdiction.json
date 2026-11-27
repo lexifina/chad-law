@@ -4,7 +4,7 @@
   "name": "Chad",
   "level": "country",
   "repo": "https://github.com/lexifina/chad-law",
-  "build": "Constitution of Chad (2023), Code pénal (2017) and Code du travail (1996), French text",
+  "build": "built: 93 French acts, one version each (Constitution 2023; 7 codes; laws, ordinances, decrees and orders by kind and year) from the Presidency, FAOLEX, NATLEX and WIPO Lex; not today's text: amendments are not applied",
   "register_date": "2026-10-28",
-  "sources": 3
+  "sources": 6
 }

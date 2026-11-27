@@ -76,3 +76,13 @@ Model use at data-build time:
 - none
 - Claude Code wrote the code and chose the source; it did not write or alter any legal text. The code is deterministic and runs no model.
 - Claude Code wrote the code and chose the source; it did not write or alter any legal text. The code is deterministic and runs no model.
+
+## Runner (2026-11-27 onwards)
+
+The two codes were moved into `codes/` by a pure rename commit (no text changed). New acts are added by `scripts/chad-law/runner/td_build.py` (Lexifina's private tooling): it reads the FAOLEX records for Chad (from FAOLEX's public sitemaps), the Presidency's media library (presidence.td WordPress API) and WIPO Lex records; fetches each text at about one request per second per host; keeps a PDF's own text layer (no OCR of our own; publisher OCR layers only when they read as clean text); splits it one file per article; and commits one version per act at noon Africa/Ndjamena on the date of the text, with `In-force`, `In-force-basis`, `Source` and, for copies, `Source-status` trailers. Commits are appended on top of `main` and pushed fast-forward. `corpus.json` lists every act.
+
+Not used: journalofficiel.td (Cloudflare challenge; not got round), sgg-tchad.org (domain no longer serves the site; the Wayback Machine holds no legal texts from it), the Assemblée nationale (no site answers), the Conseil constitutionnel (its site has news only). Appointment decrees are left out. The Hugging Face dataset `endomorphosis/ipfs_chad_laws` was read only as a list of addresses: its official addresses are on journalofficiel.td (blocked) or are FAOLEX records already listed.
+
+Held by hand: the Constitution of 4 May 2018 (presidence.td and FAOLEX) and the 1996 Constitution (FAOLEX, English) are earlier versions of `constitution/`, which this append-only history cannot place before the 2023 text; the Code civil record (FAOLEX, 1959) has no law number or reliable date.
+
+The Code de procédure pénale was built by `td_cpp.py` from the Ministry of Justice 2018 edition (CJAD copy, born-digital): 694 articles, dated 1 October 2017 under its art. 691 (applicable on the first day of the third month after promulgation on 14 July 2017).
