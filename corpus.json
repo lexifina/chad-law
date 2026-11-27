@@ -6802,6 +6802,17 @@
    "articles": 89
   },
   {
+   "id": "constitutions-anterieures/1982/sn-0929-acte-fondamental-de-la-republique-1982",
+   "kind": "constitution",
+   "number": "",
+   "date": "1982-09-29",
+   "signed": "1982-09-29",
+   "title": "Acte Fondamental de la République *1982*",
+   "source": "https://legitchad.org/textes/actes-fondamentaux/acte-fondamental-de-la-republique-1982/",
+   "text_layer": "html",
+   "articles": 36
+  },
+  {
    "id": "constitutions-anterieures/1989/sn-1210-constitution-de-la-republique-du-tchad-adopte-par",
    "kind": "constitution",
    "number": "",
@@ -42794,6 +42805,83 @@
    "articles": 10
   },
   {
+   "id": "ohada/actes-uniformes/1998/sn-0101-acte-uniforme-portant-organisation-des-suretes",
+   "kind": "ohada",
+   "number": "",
+   "date": "1998-01-01",
+   "signed": "1997-04-17",
+   "title": "Acte uniforme portant organisation des sûretés",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-1997-04-17-organisation-des-suretes/",
+   "text_layer": "html",
+   "articles": 150
+  },
+  {
+   "id": "ohada/actes-uniformes/1998/sn-0101-acte-uniforme-relatif-au-droit-commercial-general",
+   "kind": "ohada",
+   "number": "",
+   "date": "1998-01-01",
+   "signed": "1997-04-17",
+   "title": "Acte uniforme relatif au droit commercial général",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-1997-04-17-acte-uniforme-relatif-au-droit-commercial-general/",
+   "text_layer": "html",
+   "articles": 289
+  },
+  {
+   "id": "ohada/actes-uniformes/1998/sn-0101-acte-uniforme-relatif-au-droit-des-societes",
+   "kind": "ohada",
+   "number": "",
+   "date": "1998-01-01",
+   "signed": "1997-04-17",
+   "title": "Acte uniforme relatif au droit des sociétés commerciales et du groupement d'intérêt économique",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-1997-04-17-droit-des-societes-commerciales-et-du-groupement-d-inte/",
+   "text_layer": "html",
+   "articles": 914
+  },
+  {
+   "id": "ohada/actes-uniformes/2004/sn-0101-acte-uniforme-relatif-aux-contrats-de-transport",
+   "kind": "ohada",
+   "number": "",
+   "date": "2004-01-01",
+   "signed": "2003-03-22",
+   "title": "Acte uniforme relatif aux contrats de transport de marchandises par route",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-2004-01-01/",
+   "text_layer": "html",
+   "articles": 31
+  },
+  {
+   "id": "ohada/actes-uniformes/2010/sn-1205-acte-uniforme-relatif-au-droit-des-societes",
+   "kind": "ohada",
+   "number": "",
+   "date": "2010-12-05",
+   "signed": "2010-12-05",
+   "title": "Acte uniforme relatif au droit des sociétés coopératives",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-2010-12-05-droit-des-societes-cooperatives/",
+   "text_layer": "html",
+   "articles": 397
+  },
+  {
+   "id": "ohada/actes-uniformes/2010/sn-1215-acte-uniforme-portant-organisation-des-suretes",
+   "kind": "ohada",
+   "number": "",
+   "date": "2010-12-15",
+   "signed": "2010-12-15",
+   "title": "Acte uniforme portant organisation des sûretés",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-2010-12-15-organisation-des-suretes/",
+   "text_layer": "html",
+   "articles": 228
+  },
+  {
+   "id": "ohada/actes-uniformes/2010/sn-1215-acte-uniforme-relatif-au-droit-commercial-general",
+   "kind": "ohada",
+   "number": "",
+   "date": "2010-12-15",
+   "signed": "2010-12-15",
+   "title": "Acte uniforme relatif au droit commercial général",
+   "source": "https://legitchad.org/textes/actes-uniformes/acte-uniforme-2010-12-15-acte-uniforme-relatif-au-droit-commercial-general/",
+   "text_layer": "html",
+   "articles": 307
+  },
+  {
    "id": "ordonnances/1959/59-004-portant-organisation-du-conseil-economique-et",
    "kind": "ordonnance",
    "number": "59-004",
@@ -48908,6 +48996,28 @@
    "source": "https://legitchad.org/textes/accords/accord-cadre-06-2006-06-08/",
    "text_layer": "html",
    "articles": 9
+  },
+  {
+   "id": "traites-et-accords/2006/06-2006-avenant-a-laccord-cadre-de-cooperation-entre-le",
+   "kind": "convention",
+   "number": "06-2006",
+   "date": "2006-08-06",
+   "signed": "2006-08-06",
+   "title": "Avenant à l’Accord-cadre de coopération entre le Gouvernement de la république du Tchad et le Gouvernement de la république Populaire de Chine",
+   "source": "https://legitchad.org/textes/avenants/avenant-06-2006-08-06/",
+   "text_layer": "html",
+   "articles": 0
+  },
+  {
+   "id": "traites-et-accords/2006/06-2006-pour-le-financement-la-rehabilitation-la",
+   "kind": "convention",
+   "number": "06-2006",
+   "date": "2006-06-12",
+   "signed": "2006-06-12",
+   "title": "Convention pour le Financement, la Réhabilitation, la Construction, l'Exploitation et le Transfert des Terminaux de Ngueli et sur l’axe routier Moundou-Touboro",
+   "source": "https://legitchad.org/textes/conventions/convention-06-2006-06-12/",
+   "text_layer": "html",
+   "articles": 48
   },
   {
    "id": "traites-et-accords/2007/07-003-relative-aux-droits-des-personnes-handicapees",
