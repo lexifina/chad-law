@@ -16,6 +16,11 @@ lois/<année>/<numéro>-<objet>/      lois et lois organiques (lois/1999/016-99-
 ordonnances/<année>/<numéro>-<objet>/
 decrets/<année>/<numéro>-<objet>/
 arretes/<année>/<numéro>-<objet>/
+decisions/<année>/<numéro>-<objet>/
+traites-et-accords/<année>/<numéro>-<objet>/   conventions, accords, protocoles, avenants, traités, pactes
+constitutions-anterieures/<année>/...   constitutions et actes fondamentaux antérieurs à celle de 2023
+ohada/actes-uniformes/<année>/...      actes uniformes de l'OHADA (droit communautaire applicable au Tchad)
+chartes/, resolutions/, deliberations/, reglements/, reglements-interieurs/, rectificatifs/, actes/   <année>/...
 corpus.json                         la liste de tous les textes (td/national/acts)
 ```
 
@@ -24,5 +29,6 @@ corpus.json                         la liste de tous les textes (td/national/act
 - Un texte dont aucun article n'a été repéré est un seul fichier, `texte-integral.md`.
 - Un code adopté à nouveau (par exemple le Code minier de 1995 puis l'ordonnance de 2018) reste dans le même dossier
   `codes/<code>/` : la nouvelle version est un nouveau commit qui remplace les fichiers de l'ancienne.
-- Les décrets et arrêtés de nomination, d'affectation ou de promotion ne sont pas repris.
+- Les décrets et arrêtés de nomination, d'affectation ou de promotion, les décorations, grâces et ouvertures de session ne sont pas repris.
+- Les textes de Légitchad portent le numéro que donne cette base (`05-006` pour la loi n° 006 de 2005).
 - Les décisions de justice (OHADA) sont dans un dépôt séparé et privé.

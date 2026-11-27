@@ -86,3 +86,9 @@ Not used: journalofficiel.td (Cloudflare challenge; not got round), sgg-tchad.or
 Held by hand: the Constitution of 4 May 2018 (presidence.td and FAOLEX) and the 1996 Constitution (FAOLEX, English) are earlier versions of `constitution/`, which this append-only history cannot place before the 2023 text; the Code civil record (FAOLEX, 1959) has no law number or reliable date.
 
 The Code de procédure pénale was built by `td_cpp.py` from the Ministry of Justice 2018 edition (CJAD copy, born-digital): 694 articles, dated 1 October 2017 under its art. 691 (applicable on the first day of the third month after promulgation on 14 July 2017).
+
+## Légitchad (2026-11-27)
+
+`scripts/chad-law/runner/td_legit.py` reads the Légitchad sitemap (legitchad.org, the CEFOD's Banque tchadienne de données juridiques; static HTML, no robots.txt), fetches each text page at one request per second (stepping up only after ten clean minutes), takes the official text from the page (keywords and notes left out), splits it one file per article and commits one version per text at noon Africa/Ndjamena on the entry-into-force day the database gives (mostly the signature day; `In-force-basis` says which). Texts already in the repository (same kind, serial number and year) are skipped; individual measures (appointments, postings, decorations, pardons, session openings), circulars and the current constitution are not taken.
+
+Pages read: 4803; texts taken: 4346; not taken: 240 individual measure; 129 duplicate of; 68 no reliable date: held; 42 error RuntimeError; 7 type circulaire: not a normative text, not taken; 3 type not mapped: 'resolution'; 2 text too short; 2 type autre: not a normative text, not taken.
