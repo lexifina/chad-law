@@ -400,6 +400,17 @@
    "articles": 8
   },
   {
+   "id": "arretes/2025/0080-2025-pm-portant-creation-d-un-comite-technique-d",
+   "kind": "arrete",
+   "number": "0080/PR/PM/2025",
+   "date": "2025-01-30",
+   "title": "Arrêté n° 0080/PR/PM/2025 du 30 janvier 2025 portant création d'un comité technique d'élaboration d'une architecture de l'ancrage institutionnel et d'un cadre juridique pour la coordination des activités de la protection sociale",
+   "source": "https://faolex.fao.org/en/documents/LEX-FAOC246950/arrete-n-0080-pr-pm-2025-portant-creation-d-un-comite-techni-tcd-2025",
+   "file": "https://faolex.fao.org/docs/pdf/cha246950.pdf",
+   "text_layer": "born-digital",
+   "articles": 8
+  },
+  {
    "id": "codes/code-d-hygiene",
    "kind": "ordonnance",
    "number": "11-0142011",
@@ -684,6 +695,17 @@
    "file": "https://faolex.fao.org/docs/pdf/cha141619.pdf",
    "text_layer": "born-digital",
    "articles": 28
+  },
+  {
+   "id": "decrets/2005/313-pr-mcjs-05-du-30-mai-2005-portant-organisation-et",
+   "kind": "decret",
+   "number": "313",
+   "date": "2005-05-30",
+   "title": "Décret n° 313 du 30 mai 2005 PR/MCJS/05 du 30 mai 2005, portant organisation et fonctionnement du Bureau Tchadien du Droit d’Auteur",
+   "source": "https://www.wipo.int/wipolex/en/legislation/details/9124",
+   "file": "https://wipolex-res.wipo.int/edocs/lexdocs/laws/fr/td/td004fr.pdf",
+   "text_layer": "publisher-ocr",
+   "articles": 49
   },
   {
    "id": "decrets/2007/07-475-portant-rattachement-de-la-coordination-nationale",
@@ -972,6 +994,28 @@
    "articles": 34
   },
   {
+   "id": "decrets/2026/081-2026-pm-portant-organisation-et-fonctionnement-du",
+   "kind": "decret",
+   "number": "081/R/PM/MFPE/2026",
+   "date": "2026-02-11",
+   "title": "Décret n° 081/R/PM/MFPE/2026 du 11 février 2026 portant organisation et fonctionnement du Ministère de la Femme et de la petite enfance",
+   "source": "https://faolex.fao.org/en/documents/LEX-FAOC245810/decret-n-081-r-pm-mfpe-2026-portant-organisation-et-fonction-tcd-2026",
+   "file": "https://faolex.fao.org/docs/pdf/cha245810.pdf",
+   "text_layer": "born-digital",
+   "articles": 38
+  },
+  {
+   "id": "decrets/2026/382-2026-pm-portant-status-du-centre-national-de-recherche",
+   "kind": "decret",
+   "number": "382/PR/PM/MESRSFP/2026",
+   "date": "2026-04-03",
+   "title": "Décret n° 382/PR/PM/MESRSFP/2026 du 3 avril 2026 Portant status du Centre national de recherche pour le développement",
+   "source": "https://faolex.fao.org/en/documents/LEX-FAOC246952/decret-n-382-pr-pm-mesrsfp-2026-portant-status-du-centre-nat-tcd-2026",
+   "file": "https://faolex.fao.org/docs/pdf/cha246952.pdf",
+   "text_layer": "born-digital",
+   "articles": 31
+  },
+  {
    "id": "lois/1959/59-017-relative-a-la-licence-de-guide-de-chasse",
    "kind": "loi",
    "number": "59-017",
@@ -1115,6 +1159,17 @@
    "articles": 154
   },
   {
+   "id": "lois/2003/005-2003-portant-protection-du-droit-dauteur-des-droits",
+   "kind": "loi",
+   "number": "005/PR/2003",
+   "date": "2003-05-02",
+   "title": "Loi n° 005/PR/2003 du 2 mai 2003 portant Protection du Droit d’Auteur, des Droits Voisins et des Expressions du Folklore Première partie : Droit d’Auteur et Protection des « Expressions du Folklore »",
+   "source": "https://www.wipo.int/wipolex/en/legislation/details/8047",
+   "file": "https://wipolex-res.wipo.int/edocs/lexdocs/laws/fr/td/td002fr.pdf",
+   "text_layer": "born-digital",
+   "articles": 138
+  },
+  {
    "id": "lois/2003/03-010-portant-ratification-de-la-convention-relative-a",
    "kind": "loi",
    "number": "03-010/PR",
@@ -1223,6 +1278,17 @@
    "file": "https://faolex.fao.org/docs/pdf/cha248856.pdf",
    "text_layer": "born-digital",
    "articles": 5
+  },
+  {
+   "id": "ordonnances/2025/005-2025-determinant-les-principes-fondamentaux-de-l",
+   "kind": "ordonnance",
+   "number": "005/PR/2025",
+   "date": "2025-01-30",
+   "title": "Ordonnance n° 005/PR/2025 du 30 janvier 2025 Déterminant les Principes fondamentaux de l'organisation administrative du territoire de la République du Tchad",
+   "source": "https://faolex.fao.org/en/documents/LEX-FAOC244401/ordonnance-n-005-pr-2025-determinant-les-principes-fondament-tcd-2025",
+   "file": "https://faolex.fao.org/docs/pdf/cha244401.pdf",
+   "text_layer": "born-digital",
+   "articles": 17
   }
  ]
 }
